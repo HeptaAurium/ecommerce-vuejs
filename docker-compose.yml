@@ -1,0 +1,22 @@
+# By ngugikiarie_
+version: "3.4"
+services:
+  gih-clients:
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    container_name: gih-clients
+    working_dir: /app/
+    ports:
+      - "17001:13003"
+    expose:
+      - "13003"
+    volumes:
+      - ./:/app
+      - "/app/node_modules"
+    tty: true
+    networks: 
+      - gih-clients
+networks:
+    gih-clients:
+        driver: bridge
