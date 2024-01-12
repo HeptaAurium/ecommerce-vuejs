@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from "vue-router";
 
 import Home from "@/views/home/Main.vue";
+import Product from "@/views/products/show/Main.vue";
 
 function guardMyroute(to, from, next) {
   var isAuthenticated = false;
@@ -21,6 +22,14 @@ const routes = [
   {
     path: "/",
     component: Home,
+    meta: {
+      title: "Homepage | _get.it.here_"
+    }
+  },
+  {
+    path: "/product/:name/:productId",
+    component: Product,
+    name: "view-product",
     meta: {
       title: "Homepage | _get.it.here_"
     }

@@ -1,3 +1,5 @@
+import router from "../../router";
+
 const products = [
     {
         'id': 1,
@@ -43,7 +45,7 @@ const products = [
     },
     {
         'id': 7,
-        'image': 'https://images.unsplash.com/photo-1512374382149-233c42daa494?ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fHNob2VzJTIwcHVtYXxlbnwwfHwwfHw%3D&ixlib=rb-4.0.3&q=80&w=1974&auto=format&fit=crop',
+        'image': 'https://images.unsplash.com/photo-1680204101400-aeac783c9d87?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&ixlib=rb-4.0.3&q=80&w=1974&auto=format&fit=crop',
         'product_name': 'Puma Suede Classic',
         'product_price': '79.99',
         'discounted_price': '59.99',
@@ -71,7 +73,7 @@ const products = [
     },
     {
         'id': 11,
-        'image': 'https://images.unsplash.com/photo-1512327428887-25438b73f0d9?ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjZ8fHNob2VzJTIwZ3VjY2l8ZW58MHx8MHx8&ixlib=rb-4.0.3&q=80&w=1974&auto=format&fit=crop',
+        'image': 'https://images.unsplash.com/photo-1560769629-975ec94e6a86?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&q=80&w=1974&auto=format&fit=crop',
         'product_name': 'Gucci Ace Sneaker',
         'product_price': '599.99',
         'discounted_price': '499.99',
@@ -85,4 +87,15 @@ const products = [
     }
 ];
 
-export { products };
+const viewProduct = (product) => {
+    let product_name = product.product_name.toLowerCase().replaceAll
+        (' ', '-');
+    router.push({
+        name: 'view-product', params: {
+            name: product_name,
+            productId: product.id
+        }
+    });
+};
+
+export { products, viewProduct };
