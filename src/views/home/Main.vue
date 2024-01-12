@@ -1,7 +1,7 @@
 <template>
   <div class="showcase rounded-lg"></div>
-  <div class="products my-3 py-3">
-    <div class="grid grid-cols-12 gap-2">
+  <div class="products my-1">
+    <div class="grid grid-cols-12 gap-1">
       <ProductCard v-for="(product, key) in products" :product="product" />
     </div>
   </div>
