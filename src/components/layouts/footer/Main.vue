@@ -1,5 +1,5 @@
 <template>
-  <footer class="bg-theme-dark text-white py-4 mt-5 pb-6">
+  <footer class="bg-theme-dark text-white py-4 footer">
     <div class="container mx-auto text-center">
       <p class="text-gray-600 mb-3">
         Photos courtesy of
@@ -11,7 +11,7 @@
           >Unsplash</a
         >
       </p>
-      <div class="flex flex-row justify-center">
+      <div class="flex flex-col lg:flex-row justify-center">
         <p class="text-gray-600 mb-3 mr-4">
           © {{ new Date().getFullYear() }}
           <a
@@ -37,7 +37,3 @@
     </div>
   </footer>
 </template>
-
-<style>
-/* Add Tailwind CSS classes here */
-</style>

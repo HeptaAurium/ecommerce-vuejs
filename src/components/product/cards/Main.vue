@@ -1,5 +1,5 @@
 <template>
-  <div class="sm:col-span-12 md:col-span-4 lg:col-span-3">
+  <div class="col-span-6 md:col-span-4 lg:col-span-3">
     <div
       class="flex flex-col bg-theme-dark-2 shadow-lg rounded-lg max-w-md mx-auto p-4"
     >
@@ -14,7 +14,7 @@
         <h2 class="text-gray-300 font-bold text-2xl">
           {{ product.product_name }}
         </h2>
-        <p class="text-gray-400 text-sm mt-2">
+        <p class="text-gray-400 text-sm mt-2 hidden lg:block">
           This is a brief description of the product that highlights its
           features and benefits.
         </p>
@@ -28,9 +28,11 @@
           <span class="text-green-600 ml-2 text-xs">Save {{ saving }}%</span>
         </div>
         <div class="flex items-center mt-2">
-          <span class="text-gray-400 text-sm">Free shipping</span>
-          <span class="text-gray-400 text-sm ml-2">|</span>
-          <span class="text-gray-400 text-sm ml-2">30-day return policy</span>
+          <span class="text-gray-400 text-xs lg:text-sm">Free shipping</span>
+          <span class="text-gray-400 text-xs lg:text-sm ml-2">|</span>
+          <span class="text-gray-400 text-xs lg:text-sm ml-2"
+            >30-day return policy</span
+          >
         </div>
         <div class="flex items-center mt-4 space-x-4">
           <button
