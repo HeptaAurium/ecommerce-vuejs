@@ -27,13 +27,7 @@
 }
 
 .showcase {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
   background: var(--theme-dark-1);
   min-height: 80vh;
   overflow-x: hidden !important;
@@ -56,4 +50,20 @@
 
 .footer {
   margin: 1rem -1rem 0 !important;
+}
+
+.leading {
+  line-height: 1.5;
+  position: relative;
+  margin: 10px auto 10px 0;
+  padding-left: 10px;
+}
+.leading::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 4px;
+  height: 100%;
+  background: var(--theme-dark-4);
 }/*# sourceMappingURL=style.css.map */
