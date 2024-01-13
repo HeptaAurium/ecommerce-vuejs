@@ -1,11 +1,33 @@
-<<<<<<< HEAD
-# Vue 3 + Vite
+## Introduction
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+This template should help you get started with developing an online store in vue 3 + vite.
 
-## Recommended IDE Setup
+## Installation
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
-=======
-# ecommerce-vuejs
->>>>>>> c9a5bdb (Initial commit)
+1. Clone the repository
+
+   `git clone https://github.com/HeptaAurium/ecommerce-vuejs`
+   `cd ecommerce-vuejs`
+
+2. Run the app either using `Docker` or `npm`
+
+## 2.1 Using `Docker` (recommended)
+
+    `docker-compose up -d --build`
+
+## 2.2 Using `npm`
+
+    `npm install`
+    `npm run dev`
+
+## Credits
+
+- [Ngugi.K.](https://github.com/HeptaAurium)
+- [ichael](https://ichaelinc.com)
+- [Unsplash](https://unsplash.com)
+- [fontawesome](https://fontawesome.com)
+
+## Tech Stacks used
+
+- [Vue](https://vuejs.org)
+- [Tailwind](https://tailwindcss.com)
