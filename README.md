@@ -7,6 +7,7 @@ This template should help you get started with developing an online store in vue
 1. Clone the repository
 
    `git clone https://github.com/HeptaAurium/ecommerce-vuejs`
+   <br>
    `cd ecommerce-vuejs`
 
 2. Run the app either using `Docker` or `npm`
@@ -14,6 +15,7 @@ This template should help you get started with developing an online store in vue
 ## 2.1 Using `Docker` (recommended)
 
     `docker-compose up -d --build`
+    port 17001
 
 ## 2.2 Using `npm`
 

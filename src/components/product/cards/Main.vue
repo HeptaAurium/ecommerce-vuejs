@@ -41,7 +41,8 @@
             >30-day return policy</span
           >
         </div>
-        <div class="flex items-center mt-4 space-x-4 grid grid-cols-3">
+        <div class="flex items-center mt-4 space-x-4 grid grid-cols-3 hidden">
+          <!-- Someone suggested to hide this section -->
           <button
             class="bg-blue-600 text-white px-4 py-1 lg:py-2 rounded-lg hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-opacity-50 col-span-2 flex flex-row items-center justify-center"
           >

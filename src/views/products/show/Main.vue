@@ -1,5 +1,5 @@
 <template>
-  <div class="showcase rounded">
+  <div class="rounded">
     <TopNav />
     <div class="w-full lg:w-[90vw] xl:w-[70vw] mx-auto lg:pt-4">
       <div class="grid grid-cols-12 h-full gap-2">

@@ -5,6 +5,8 @@ import globals from "./globals";
 
 import '@/assets/css/style.css';
 import '@/assets/css/index.css';
+import { Carousel, initTE } from "tw-elements";
+initTE({ Carousel }, true);
 
 import App from "./App.vue";
 import router from "./router";

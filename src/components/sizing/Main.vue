@@ -5,7 +5,7 @@
       v-for="(size, key) in sizes"
       @click="selectSize($event)"
     >
-      <span class="text-slate-100">
+      <span class="text-slate-100" @click="selectSize($event)">
         {{ size }}
       </span>
     </div>
